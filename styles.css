@@ -35,14 +35,6 @@ h1 {
   text-align: center;
 }
 
-/* .min-height50 {
-  min-height: 50vh;
-} */
-
-/* .column {
-  flex-direction: column;
-} */
-
 .container {
   width: 30%;
   background-color: white;
@@ -103,28 +95,17 @@ h1 {
   display: none;
 }
 
-.table {
+.table1 {
   border: 2px solid black;
-  width: 800px;
+  width: 300px;
 }
 
-th {
+.table2 {
+  border: 2px solid black;
+  border-left: none;
+  width: 900px;
+}
+
+th, td {
   text-align: left;
-}
-
-/* thead {
-  background-color: #ddd;
-} */
-
-tbody > tr:nth-child(2n) {
-  background-color: #ddd;
-}
-
-.time-col {
-  width: 200px;
-  border-right: 1px solid black;
-}
-
-.desc-col {
-  width: 600px;
 }
