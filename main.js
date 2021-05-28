@@ -1,21 +1,23 @@
 var $addEntryBtn = document.querySelector('.add-entry');
 var $modalBox = document.querySelector('.modal');
 var $buttonSelect = document.querySelector('.button-select');
-var $table1 = document.querySelector('.table1');
-var $table2 = document.querySelector('.table2');
-var $tbody1 = document.querySelector('#tbody1');
-var $tbody2 = document.querySelector('#tbody2');
 var $allDays = document.querySelectorAll('.day-container');
-var entries = [
-  {
-    time: '1:00',
-    description: 'description'
-  },
-  {
-    time: '2:00',
-    description: 'description'
-  }
-];
+var $currentDay = document.querySelector("#current-day");
+var $tableData1 = document.querySelectorAll(".tableData1");
+var $tableData2 = document.querySelectorAll(".tableData2");
+var $daySelect = document.querySelector(".day-select");
+var $timeSelect = document.querySelector(".time-select");
+var $descSelect = document.querySelector(".desc-select")
+
+var entries = {
+  Sunday: [],
+  Monday: [],
+  Tuesday: [],
+  Wednesday: [],
+  Thursday: [],
+  Friday: [],
+  Saturday: []
+};
 
 $addEntryBtn.addEventListener('click', function (event) {
   $modalBox.classList.remove('hidden');
@@ -23,21 +25,19 @@ $addEntryBtn.addEventListener('click', function (event) {
 
 $buttonSelect.addEventListener('click', function (event) {
   $modalBox.classList.add('hidden');
+  console.log($daySelect.value);
+  console.log($timeSelect.value);
+  entries[$daySelect.value].time = $timeSelect.value;
+  entries[$daySelect.value].description = $descSelect.value;
+  console.log(entries);
 });
 
 for (const day of $allDays) {
   day.addEventListener('click', function (event) {
     for (let i = 0; i < entries.length; i++) {
-      const $tableRow1 = document.createElement('tr');
-      const $tableData1 = document.createElement('td');
-      const $tableRow2 = document.createElement('tr');
-      const $tableData2 = document.createElement('td');
-      $tableData1.innerHTML = 'entries.time';
-      $tableData2.innerHTML = 'entries.desc';
-      $tableRow1.append($tableData1);
-      $tableRow2.append($tableData2);
-      $tbody1.append($tableRow1);
-      $tbody2.append($tableRow2);
+      $tableData1[i].innerHTML = entries[i].time;
+      $tableData2[i].innerHTML = entries[i].description;
     }
+    $currentDay.innerHTML = event.target.textContent;
   });
 }
