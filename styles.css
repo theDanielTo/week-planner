@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 
-.addEntry {
+.add-entry {
   cursor: pointer;
   padding: 1rem 2rem;
   font-size: 20px;
@@ -14,7 +14,7 @@ body {
   box-shadow: 5px 5px 5px black;
 }
 
-.addEntry:hover {
+.add-entry:hover {
   background-color: #95bcf2;
 }
 
@@ -34,7 +34,7 @@ h1 {
   text-align: center;
 }
 
-.minHeight50 {
+.min-height50 {
   min-height: 50vh;
 }
 
@@ -63,20 +63,24 @@ h1 {
   justify-content: flex-end;
 }
 
-.daySelect {
+.day-select {
   margin-right: 4.5rem;
 }
 
-.timeSelect {
+.time-select {
   margin-right: 0.2rem;
 }
 
-.textSelect {
+.text-select {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.buttonSelect {
-  margin-right: 6rem;
+.button-select {
+  margin-right: 10.5rem;
   margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none;
 }

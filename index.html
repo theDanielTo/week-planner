@@ -9,13 +9,13 @@
 </head>
 
 <body>
-  <div class="modal row justify-center align-center">
-    <div class="container">
+  <div class="modal row justify-center align-center hidden">
+    <div class="container hidden">
       <div>
         <h2 class="text-center">Add Entry</h2>
       </div>
       <div class="row justify-center align-center">
-        <select class="daySelect" name="day-of-week" id="day-of-week">
+        <select class="day-select" name="day-of-week" id="day-of-week">
           <option value="" selected disabled>Day of Week</option>
           <option value="Monday">Monday</option>
           <option value="Tuesday">Tuesday</option>
@@ -25,7 +25,7 @@
           <option value="Saturday">Saturday</option>
           <option value="Sunday">Sunday</option>
         </select>
-        <select class="timeSelect" name="time" id="time">
+        <select class="time-select" name="time" id="time">
           <option value="" selected disabled>Time</option>
           <option value="1:00">1:00</option>
           <option value="2:00">2:00</option>
@@ -53,11 +53,11 @@
           <option value="24:00">24:00</option>
         </select>
       </div>
-      <div class="textSelect row justify-center align-center">
+      <div class="text-select row justify-center align-center">
         <textarea name="description" id="description" cols="30" rows="10" placeholder="Description"></textarea>
       </div>
       <div class="row end">
-        <button class="buttonSelect">Submit</button>
+        <button class="button-select">Submit</button>
       </div>
     </div>
   </div>
@@ -65,8 +65,8 @@
     <h1 class="text-center">Weekly Planner</h1>
   </header>
   <main>
-    <div class="flex center minHeight50 alignCenter">
-      <button class="addEntry">Add Entry</button>
+    <div class="row justify-center align-center min-height50">
+      <button class="add-entry">Add Entry</button>
     </div>
   </main>
   <script src="main.js"></script>
