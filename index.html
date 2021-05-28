@@ -10,7 +10,7 @@
 
 <body>
   <div class="modal row justify-center align-center hidden">
-    <div class="container hidden">
+    <div class="container">
       <div>
         <h2 class="text-center">Add Entry</h2>
       </div>
@@ -65,8 +65,56 @@
     <h1 class="text-center">Weekly Planner</h1>
   </header>
   <main>
-    <div class="row justify-center align-center min-height50">
+    <div class="row space-evenly">
+      <div class="row day-container justify-center align-center">
+        <p>Sunday</p>
+      </div>
+      <div class="row day-container justify-center align-center">
+        <p>Monday</p>
+      </div>
+      <div class="row day-container justify-center align-center">
+        <p>Tuesday</p>
+      </div>
+      <div class="row day-container justify-center align-center">
+        <p>Wednesday</p>
+      </div>
+      <div class="row day-container justify-center align-center">
+        <p>Thursday</p>
+      </div>
+      <div class="row day-container justify-center align-center">
+        <p>Friday</p>
+      </div>
+      <div class="row day-container justify-center align-center">
+        <p>Saturday</p>
+      </div>
+    </div>
+    <div class="row justify-center align-center">
       <button class="add-entry">Add Entry</button>
+    </div>
+    <div class="row justify-center">
+      <h2>Scheduled Events for <span id="current-day">Monday</span></h2>
+    </div>
+    <div class="row justify-center">
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </main>
   <script src="main.js"></script>

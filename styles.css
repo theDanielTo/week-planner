@@ -12,6 +12,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   box-shadow: 5px 5px 5px black;
+  margin: 2rem;
 }
 
 .add-entry:hover {
@@ -34,9 +35,9 @@ h1 {
   text-align: center;
 }
 
-.min-height50 {
+/* .min-height50 {
   min-height: 50vh;
-}
+} */
 
 /* .column {
   flex-direction: column;
@@ -45,6 +46,23 @@ h1 {
 .container {
   width: 30%;
   background-color: white;
+}
+
+.day-container {
+  border: 2px solid black;
+  font-size: 20px;
+  font-weight: bold;
+  width: 10rem;
+  height: 10rem;
+  cursor: pointer;
+}
+
+.day-container:hover {
+  background-color: #dddddd;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
 }
 
 .row {
@@ -83,4 +101,10 @@ h1 {
 
 .hidden {
   display: none;
+}
+
+.table {
+  border: 2px solid black;
+  width: 1200px;
+  height: 600px;
 }
