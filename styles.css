@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.addEntry {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px black;
+}
+
+.addEntry:hover {
+  background-color: #95bcf2;
+}
+
+h1 {
+  margin-top: 3rem;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  background-color: rgba(36, 36, 36, 0.6);
+  width: 100vw;
+  height: 100vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+}
+
+.minHeight50 {
+  min-height: 50vh;
+}
+
+.alignCenter {
+  align-items: center;
+}
