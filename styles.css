@@ -97,13 +97,27 @@ h1 {
 
 .table1 {
   border: 2px solid black;
-  width: 300px;
+  height: 210px;
 }
 
 .table2 {
   border: 2px solid black;
   border-left: none;
+  height: 210px;
+}
+
+.table1-heading {
+  width: 300px;
+  background-color: #cbcbcb;
+}
+
+.table2-heading {
   width: 900px;
+  background-color: #cbcbcb;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #eeeeee;
 }
 
 th, td {
