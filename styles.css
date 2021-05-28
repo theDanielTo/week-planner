@@ -58,7 +58,7 @@ h1 {
 }
 
 .day-container:hover {
-  background-color: #dddddd;
+  background-color: #ddd;
 }
 
 .space-evenly {
@@ -105,6 +105,26 @@ h1 {
 
 .table {
   border: 2px solid black;
-  width: 1200px;
-  height: 600px;
+  width: 800px;
+}
+
+th {
+  text-align: left;
+}
+
+/* thead {
+  background-color: #ddd;
+} */
+
+tbody > tr:nth-child(2n) {
+  background-color: #ddd;
+}
+
+.time-col {
+  width: 200px;
+  border-right: 1px solid black;
+}
+
+.desc-col {
+  width: 600px;
 }
