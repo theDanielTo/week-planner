@@ -34,27 +34,49 @@ h1 {
   text-align: center;
 }
 
-.flex {
-  display: flex;
-}
-
-.center {
-  justify-content: center;
-}
-
 .minHeight50 {
   min-height: 50vh;
 }
 
-.alignCenter {
-  align-items: center;
-}
-
-.column {
+/* .column {
   flex-direction: column;
-}
+} */
 
 .container {
   width: 30%;
   background-color: white;
+}
+
+.row {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.end {
+  justify-content: flex-end;
+}
+
+.daySelect {
+  margin-right: 4.5rem;
+}
+
+.timeSelect {
+  margin-right: 0.2rem;
+}
+
+.textSelect {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.buttonSelect {
+  margin-right: 6rem;
+  margin-bottom: 1rem;
 }
