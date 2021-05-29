@@ -95,6 +95,23 @@ h1 {
   display: none;
 }
 
+.update-button {
+  background-color: #2b78e4;
+  color: white;
+  border-style: none;
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+}
+
+.update-button:hover {
+  background-color: #95bcf2;
+  color: black;
+}
+
+.right {
+  float: right;
+}
+
 .table1 {
   border: 2px solid black;
   height: 210px;

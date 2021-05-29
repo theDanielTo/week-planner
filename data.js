@@ -5,7 +5,8 @@ var entries = {
   Wednesday: [],
   Thursday: [],
   Friday: [],
-  Saturday: []
+  Saturday: [],
+  editing: null
 };
 
 const prevEntriesJSON = window.localStorage.getItem('schedule-local-storage');
